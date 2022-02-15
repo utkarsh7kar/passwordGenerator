@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="passgen">
+        <div class="outer">
+            <h2 class="title">
+                Password Generator
+            </h2>
+            <div class="result-container">
+                <input type="text" id="result-password" disabled value="oWCWvUx.#LY7">
+                <button id="copy" type="button">copy</button>
+            </div>
+            <div class="options">
+                <div class="item">
+                    <label for="passwordkey"> Password Length: </label>
+                    <input type="text" id="passlen" size="2" class="input" placeholder="Length(value:6-12)">
+                </div>
+                <div class="item">
+                    <label for="specialchar">Include Symbols:</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+                <div class="item">
+                    <label for="uppercase">Include Uppercase:</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+            </div>
+            <div class="submit-btn">
+                <button id="genbtn" type="submit">
+                    GENERATE PASSWORD
+                </button>
+            </div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
